@@ -1,0 +1,72 @@
+appium installation process for running on eclipse
+1.download node.js 
+link - https://nodejs.org/en/download/
+------------------------------------------------------------------------------------------------------------------------
+2.download appium desktop client
+link - https://github.com/appium/appium-desktop/releases/tag/v1.15.1
+--------------------------------------------------------------------------------------------------------------------------
+3.download android sdk tool for windows
+link - https://developer.android.com/studio#command-tools
+------------------------------------------
+4.rename the folder to android-sdk and save.
+    open the folder tools/bin
+ 
+inside bin folder, go to copy link and type cmd and click enter 
+cmd  open like below
+ 
+till bin the path will open and type this below 
+link -  sdkmanager "platform-tools" "platforms;android-28"
+click y and it will complete/done
+inside sdk new folders will appear inside tool folder
+copy the path of till sdk and set environment variable as ANDROID_HOME
+copy the path of till sdk/platform-tools and set environment variable as path
+#-----------
+after this
+open cmd and type adb devices
+it should list the connected android devices to your system with udid and device 
+------------
+
+make sure jdk installed on your system and path is set on environment variable as JAVA_PATH
+
+Here I have download sdk build tool 28 because my android version is 9 , so it supports api level 28
+You can check it from the android history
+--------------------------------------------------------------------------------------------------------------                      
+download the buldtools and paste the files inside the platform tools
+https://androidsdkmanager.azurewebsites.net/Buildtools
+ 
+
+if sdk commandline tool not working properly then
+
+-------------------------
+1.or download android studio and open installed file which will be inside appdata/ local / android /sdk 
+copy sdk file and paste on somewhere else
+open build-tools which is inside the sdk file and cut every files and paste inside the platform-tools folder
+ 
+2.download eclipse and create workspace folder
+ To download eclipse select below category 
+Eclipse IDE for Java EE Developers
+You can select the windows / linux , 32bit or 63bit
+To download eclipse go to link below
+Link - https://www.eclipse.org/downloads/packages/release/oxygen/3a
+Here I downloaded the oxygen version 
+
+create project as maven
+open the pom.xml file and add dependencies 
+to add dependencies
+link - mavenrepository.com
+a. simple json
+b.java client
+c.selenium 
+
+create the java class and main function project and save
+-----------------------------------
+start the server appium desktop client
+-----------------
+make sure your device is connected properly using usb cable 
+you could check this through the cmd prompt by typing adb devices - it will show the device udid
+------------------------------------
+
+run the program on eclipse using java application
+
+  
+
