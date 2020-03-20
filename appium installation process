@@ -38,22 +38,29 @@ https://androidsdkmanager.azurewebsites.net/Buildtools
 if sdk commandline tool not working properly then
 
 -------------------------
-1.or download android studio and open installed file which will be inside appdata/ local / android /sdk 
+1 download android studio 
+
+link - https://developer.android.com/studio
+
+2.open installed file which will be inside appdata/ local / android /sdk 
 copy sdk file and paste on somewhere else
 open build-tools which is inside the sdk file and cut every files and paste inside the platform-tools folder
  
-2.download eclipse and create workspace folder
+3.download eclipse and create workspace folder
  To download eclipse select below category 
 Eclipse IDE for Java EE Developers
 You can select the windows / linux , 32bit or 63bit
+--------------------------------------------------------------------
 To download eclipse go to link below
-Link - https://www.eclipse.org/downloads/packages/release/oxygen/3a
-Here I downloaded the oxygen version 
 
+Link - https://www.eclipse.org/downloads/packages/release/oxygen/3a
+-------------------------------------------------------------------
+Here I downloaded the oxygen version 
+--------------------------------------------------------------------------------------------------------------
 create project as maven
 open the pom.xml file and add dependencies 
-to add dependencies
-link - mavenrepository.com
+to add dependencies go to below link  and search for below categories and copy the dependency and paste inside the pom.xml file and save 
+link - mavenrepository.com 
 a. simple json
 b.java client
 c.selenium 
